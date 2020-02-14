@@ -10,36 +10,58 @@
 
     <title>Feedback Form</title>
   </head>
+  <style>
+  body {
+  background: url('file:///C:/Users/wayto/Downloads/colorlib-regform-5/hospital.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  opacity: 0.9;
+  -o-background-size: cover;
+}
+  </style>
   <body>
-    
+   
      <div class="container">
-    
-          <div class="card border-primary  mx-auto my-5" style="max-width: 55rem">
+          <div class="card border-primary  mx-auto my-5" style="max-width: 50rem; background-color: rgb(240,248,255);">
             <div class="card text-center">
-            <h5 class="card-header bg-primary">Feedback form</h5>
+            <h5 class="card-header" style="background-color: rgb(30,144,255)">Feedback form</h5>
             </div>
             <form>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">Patient Id</span>
+                <div class="container">
+                    <div class="row mt-3">
+                      <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Patient Id</span>
+                            </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Date</span>
+                            </div>
+                            <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                      </div>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">Date</span>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">Patient Name</span>
+                                </div>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
                     </div>
-                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                </div>
+                
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">Name</span>
-                    </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">Department No</span>
+                        <span class="input-group-text" id="basic-addon3">Department Name</span>
                     </div>
                     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
@@ -51,47 +73,41 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">Patient Id</span>
-                    </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon3">Waiting Time</span>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="time" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon3">Arrival rate</span>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon3">Service rate</span>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon3">No of queue waiting</span>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon3">Queue hours</span>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Is Our Pediction war Accurate</label>
+                  <label class="form-check-label" for="exampleCheck1">Is Our Pediction was Accurate</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary my-3">Submit</button>
               </form>
-      
+            </div>
           </div>
     </div>
         
